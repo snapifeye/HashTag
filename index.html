@@ -85,7 +85,6 @@ var feed = new Instafeed({
     loadButton.addEventListener('click', function() {
   feed.next();
 });
-feed.run();
   after: function () {
     var images = $("#instafeed").find('a');
     $.each(images, function(index, image) {
