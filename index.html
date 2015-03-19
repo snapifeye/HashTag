@@ -416,7 +416,12 @@ body {
 <script>
 		var nextt = 1;
     var feed = new Instafeed({
-        
+        get: 'tagged',
+        tagName: 'dearmke',
+        limit: '1000',
+        sortBy : 'most-liked',
+        resolution: 'standard_resolution',
+        clientId: 'a164a0f6607c4aca9e0e4dff13937277',  
 
         after: function() { if (this.hasNext()) {nextt = 1;} else {nextt = 0;} },
 
