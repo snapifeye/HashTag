@@ -39,7 +39,8 @@
           var feed = new Instafeed({
               get: 'tagged',
               tagName: 'Snapifeye',
-              clientId: 'a164a0f6607c4aca9e0e4dff13937277'
+              clientId: 'a164a0f6607c4aca9e0e4dff13937277',
+              template: '<a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
           });
           feed.run();
       </script>
