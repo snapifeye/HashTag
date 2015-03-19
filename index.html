@@ -73,8 +73,7 @@
 var feed = new Instafeed({
   clientId: 'a164a0f6607c4aca9e0e4dff13937277',
   limit: 20,
-  sortBy: 'tagged',
-  tagName: 'MUISS',
+  sortBy: 'most-liked',
   after: function () {
     var images = $("#instafeed").find('a');
     $.each(images, function(index, image) {
