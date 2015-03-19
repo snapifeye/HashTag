@@ -96,7 +96,7 @@ var nextt = 1;
     var feed = new Instafeed({
      get: 'tagged',
      tagName: 'Snapifeye',
-		limit: '12',
+		limit: '3',
 		sortBy : 'random',
      resolution: 'standard_resolution',
      clientId: 'a164a0f6607c4aca9e0e4dff13937277',	
@@ -108,10 +108,10 @@ var nextt = 1;
 	feed.run();
 
 		setInterval(function() {
-			$( "#instafeed" ).fadeOut( "slow", function() {
+			$( "#instafeed" ).fadeOut( "fast", function() {
 			$( "#instafeed" ).empty();
 			feed.run();
-			$( "#instafeed" ).fadeIn( "slow")
+			$( "#instafeed" ).fadeIn( "fast")
 			});
 		}, 5000);
 		
