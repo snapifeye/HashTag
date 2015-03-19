@@ -361,10 +361,15 @@ body {
 }
 
 #instafeed {
-    width:612px;
-    padding:0px;
-    height: 612px;
-    overflow:hidden;
+      width:90%;
+	margin:0 auto;
+    height: 100%;
+    -moz-column-count:4;
+    -webkit-column-count:4;
+    column-count: 4;
+    column-gap: 2.5%;
+    -moz-column-gap: 2.5%;
+    -webkit-column-gap: 2.5%;
    
 }
 .tile {
@@ -419,7 +424,7 @@ body {
         get: 'tagged',
         tagName: 'dearmke',
         sortBy : 'most-liked',
-        limit:'1000',
+        limit:'12',
         resolution: 'standard_resolution',
         clientId: 'a164a0f6607c4aca9e0e4dff13937277',  
 
