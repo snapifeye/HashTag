@@ -97,7 +97,7 @@ body {
         resolution: 'standard_resolution',
         clientId: 'a164a0f6607c4aca9e0e4dff13937277',
 
-        after: function() { if (this.hasNext()) {nextt = 1;} else {nextt = 3;} },
+        after: function() { if (this.hasNext()) {nextt = 1;} else {nextt = 0;} },
 
         //{{caption}} {{likes}} http:{{image}}
         template:'<div class="tile"><img class="item" src="http:{{image}}"></div>'
@@ -109,20 +109,20 @@ body {
 
     if (nextt == 1) {
         setInterval(function() {
-            $( "#instafeed" ).fadeOut( "1900", function() {
+            $( "#instafeed" ).fadeOut( "slow", function() {
             feed.next();
             $( "#instafeed" ).empty();
             feed.run();
-            $( "#instafeed" ).fadeIn( "1500")
+            $( "#instafeed" ).fadeIn( "slow")
             });
-        }, 5000);
+        }, 0000);
     } else {
         setInterval(function() {
-            $( "#instafeed" ).fadeOut( "1900", function() {
+            $( "#instafeed" ).fadeOut( "slow", function() {
             $( "#instafeed" ).empty();
             alert ("!!!");
             feed.run();
-            $( "#instafeed" ).fadeIn( "1500")
+            $( "#instafeed" ).fadeIn( "slow")
             });
         }, 5000);
     }
