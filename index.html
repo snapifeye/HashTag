@@ -35,13 +35,14 @@
 	</head>
 	<body style="background:#00085a">
 <div class=col-md-12> HELLO!
+      
       <script type="text/javascript">
-          var feed = new Instafeed({
-              get: 'tagged',
-              tagName: 'Foodstagram',
-              clientId: 'a164a0f6607c4aca9e0e4dff13937277',
-              
-        </script>
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'foodstagram',
+        clientId: 'a164a0f6607c4aca9e0e4dff13937277',
+        template: '<a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
+  </script>
 
     <div id="instafeed"></div>
     
