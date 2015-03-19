@@ -73,8 +73,8 @@ var feed = new Instafeed({
   clientId: 'a164a0f6607c4aca9e0e4dff13937277',
   get: 'tagged',
   tagName:'Snapifeye',
-  limit: 1,
-  resolution: 'standard_resolution',
+  limit: 20,
+  resolution: 'thumbnail',
   after: function () {
     var images = $("#instafeed").find('a');
     $.each(images, function(index, image) {
