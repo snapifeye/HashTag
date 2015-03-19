@@ -108,20 +108,20 @@ body {
 
     if (nextt == 1) {
         setInterval(function() {
-            $( "#instafeed" ).fadeOut( "slow", function() {
+            $( "#instafeed" ).fadeOut( "900", function() {
             feed.next();
             $( "#instafeed" ).empty();
             feed.run();
-            $( "#instafeed" ).fadeIn( "slow")
+            $( "#instafeed" ).fadeIn( "750")
             });
         }, 5000);
     } else {
         setInterval(function() {
-            $( "#instafeed" ).fadeOut( "slow", function() {
+            $( "#instafeed" ).fadeOut( "900", function() {
             $( "#instafeed" ).empty();
             alert ("!!!");
             feed.run();
-            $( "#instafeed" ).fadeIn( "slow")
+            $( "#instafeed" ).fadeIn( "750")
             });
         }, 5000);
     }
