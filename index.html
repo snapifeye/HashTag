@@ -414,7 +414,7 @@ body {
 <div class=col-md-6> <center></center><h1> Instagram Silder</h1></center>
 
 <script>
-		var nextt = 2;
+		var nextt = 1;
     var feed = new Instafeed({
         get: 'tagged',
         tagName: 'tfm',
@@ -423,7 +423,7 @@ body {
         resolution: 'standard_resolution',
         clientId: 'a164a0f6607c4aca9e0e4dff13937277',  
 
-        after: function() { if (this.hasNext()) {nextt = 1;} else {nextt = 3;} },
+        after: function() { if (this.hasNext()) {nextt = 1;} else {nextt = 0;} },
 
         //{{caption}} {{likes}} http:{{image}}
         template:'<div class="tile"><img class="item" src="http:{{image}}"></div>'
