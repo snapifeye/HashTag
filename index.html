@@ -71,9 +71,9 @@
 <script>
 var feed = new Instafeed({
   clientId: 'a164a0f6607c4aca9e0e4dff13937277',
-  limit: 20,
   get: 'tagged',
-  tagName:'Snapifeye'
+  tagName:'Snapifeye',
+  limit: 20,
   after: function () {
     var images = $("#instafeed").find('a');
     $.each(images, function(index, image) {
