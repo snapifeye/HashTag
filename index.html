@@ -74,7 +74,7 @@ var feed = new Instafeed({
   get: 'tagged',
   tagName:'Snapifeye',
   limit: 1,
-  resolution: standard_resolution,
+  resolution: 'standard_resolution',
   after: function () {
     var images = $("#instafeed").find('a');
     $.each(images, function(index, image) {
