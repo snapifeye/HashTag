@@ -75,17 +75,6 @@ var feed = new Instafeed({
   tagName:'tfm',
   limit: 50,
   resolution: 'thumbnail',
-  var loadButton = document.getElementById('load-more'),
-  feed = new Instafeed({
-  after: function() {
-  	    if (!this.hasNext()) {
-          loadButton.setAttribute('disabled', 'disabled');
-        }
-      },
-    });
-    loadButton.addEventListener('click', function() {
-  feed.next();
-});
   after: function () {
     var images = $("#instafeed").find('a');
     $.each(images, function(index, image) {
