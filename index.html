@@ -35,9 +35,9 @@ body {
 }
 
 #instafeed {
-    width:100%;
+    width:612px;
 	margin:0 auto;
-    height: 100%;
+    height: auto;
    
 }
 .tile {
@@ -49,7 +49,7 @@ body {
 }
 
 .tile img {
-    width:100%;
+    width:612px;
 	max-height: 100%;
     display:block;
 }
@@ -91,12 +91,12 @@ body {
     var feed = new Instafeed({
         get: 'tagged',
         tagName: 'DearMKE',
-        limit: '2',
+        limit: '100',
         sortBy : 'most-recent',
         resolution: 'standard_resolution',
         clientId: 'a164a0f6607c4aca9e0e4dff13937277',
 
-        after: function() { if (this.hasNext()) {nextt = 2;} else {nextt = 100;} },
+        after: function() { if (this.hasNext()) {nextt = 1;} else {nextt = 0;} },
 
         //{{caption}} {{likes}} http:{{image}}
         template:'<div class="tile"><img class="item" src="http:{{image}}"></div>'
