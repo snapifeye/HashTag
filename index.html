@@ -38,63 +38,20 @@
       <script type="text/javascript">
           var feed = new Instafeed({
               get: 'tagged',
-              tagName: 'Snapifeye',
+              tagName: 'Foodstagram',
               clientId: 'a164a0f6607c4aca9e0e4dff13937277',
               template: '<a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
               
-              var loadButton = document.getElementById('load-more'),
-
-    feed = new Instafeed({
-      // every time we load more, run this function
-      after: function() {
-        // disable button if no more results to load
-        if (!this.hasNext()) {
-          loadButton.setAttribute('disabled', 'disabled');
-        }
-      },
-    });
-
-// bind the load more button
-loadButton.addEventListener('click', function() {
-  feed.next();
-});
-
-// run our feed!
-feed.run();
-          });
-          feed.run();
-      </script>
+        </script>
 
     <div id="instafeed"></div>
 
 
-		<div class="sidebar"> <div class="col-md-6"><center>
+ <div class="col-md-6"><center>
 
-			<h2 style="color:white; font-family: Helvetica; padding:0px;">Bridge the Gap Between your<br>Events and Social Media<h2>
+		
         <div id="instafeed"></div>
 
-		</snapifeye-widget>
-		<script type="text/javascript">
-	(function(d){
-	    var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');
-	    p.type = 'text/javascript';
-	    p.async = true;
-	    p.src = '//assets.pinterest.com/js/pinit.js';
-	    f.parentNode.insertBefore(p, f);
-	}(document));
-	</script>
 	</body>
 </html>
 
-
-  </head>
-
-  <body>
-    <div class=row>
-
-
-
-
-</div>
-
-</body>
