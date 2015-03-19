@@ -27,9 +27,8 @@
 
 		<!-- Need this -->
 		<script type="text/javascript" src="http://events.snapifeye.com/snapifeye-widget/snapifeye-widget-all.min.js"></script>
-
-		<style>
-		#instafeed a {
+<style>
+  #instafeed a {
   padding:5px 5px 1px 5px;
   margin:10px;
   border:1px solid #e1e1e1;
@@ -39,7 +38,7 @@
 }
 
 #instafeed .likes {
-  background:rgba(222,89,135,0.8);
+  background:#70abce;
   font-family:sans-serif;
   font-size:1em;
   position:absolute;
@@ -75,7 +74,6 @@ var feed = new Instafeed({
   limit: 20,
   get: 'tagged',
   tagName:'Snapifeye'
-  sortBy: 'most-liked',
   after: function () {
     var images = $("#instafeed").find('a');
     $.each(images, function(index, image) {
